@@ -2,14 +2,20 @@ class View
 
   def display_events(events)
     events.each do |event|
-      puts "#{event.day} at #{event.time} - #{event.name}"
+      puts "#{event.day.date} at #{event.time} - #{event.name}"
     end
   end
 
   def display_users(users)
+    users.each do |user|
+      puts "#{user.name}"
+    end
   end
 
   def display_rsvps(rsvps)
+    rsvps.each do |rsvp|
+      puts rsvp
+    end
   end
 
 
