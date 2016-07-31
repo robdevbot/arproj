@@ -13,6 +13,7 @@ class Controller
   end
 
   def get_agenda_for_week
+    Event.all
     # one_week_from_now = Date.today + 7.days
     # Event.where(day.date: Date.today)
     #   # ..one_week_from_now)
